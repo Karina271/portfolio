@@ -1,0 +1,27 @@
+/**************IMPORT**************/
+@import 'reset';
+/**********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border-box: 2px solid black;
+    max-width: 1022px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/********VARIABLES*********/
+
+$lato: 'Lato', sans-serif;
+$maven: 'Maven Pro', sans-serif;
+/***********NAV***********/
+@import 'nav';
+/********ARTICLE-1********/
+@import 'article-1';
+/********ARTICLE-2********/
+@import 'article-2';
+/********ARTICLE-3********/
+@import 'article-3';

@@ -1,0 +1,145 @@
+.article-3 {
+    background: #323232;
+    padding: 13px 0;
+    .article-3-wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 50px 90/1020*100%;
+        border-top: 1px solid #2b2b2b;
+        border-bottom: 1px solid #2b2b2b;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .get-in-touch,
+    .in-order {
+        font-family: $maven;
+        text-align: left;
+    }
+    .get-in-touch {
+        font-size: 30px;
+        color: rgb( 224, 224, 224);
+    }
+    .in-order {
+        font-size: 18px;
+        color: rgb( 190, 190, 190);
+    }
+    /*FORM*/
+    form {
+        width: 580/780*100%;
+        overflow: auto;
+        float: left;
+        @media (max-width: 800px) {
+            width: 100%;
+            float: none;
+        }
+    }
+    /*INPUTS*/
+    input[type="text"],
+    textarea[name="message"] {
+        height: 38px;
+        width: 100%;
+        background: #454545;
+        padding: 0 15px;
+        color: #bebebe;
+        outline: none;
+        border: none;
+        margin: 16px 0 0;
+        font-family: $lato;
+    }
+    textarea[name="message"] {
+        height: 150px;
+        padding: 15px;
+        resize: none;
+    }
+    input[type="submit"] {
+        height: 37px;
+        width: 90px;
+        background: #2eb398;
+        color: #d7fcf5;
+        font-family: $lato;
+        font-weight: bold;
+        border: none;
+        float: right;
+        margin: 16px 0 0;
+    }
+    .right-content {
+        float: left;
+        width: (780-580)/780*100%;
+        @media (max-width: 800px) {
+            float: none;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .quisque-hendrerit {
+            font-size: 12px;
+            font-family: $lato;
+            color: rgb( 224, 224, 224 );
+            line-height: 1.8;
+            text-align: justify;
+            margin: 12px 0 0 20px;
+        }
+        .bold {
+            font-weight: 800;
+        }
+        .contacts {
+            position: relative;
+            font-family: $lato;
+            font-size: 12px;
+            color: rgb( 190, 190, 190);
+            font-weight: bold;
+            line-height: 1.8;
+            margin: 0 0 0 43px;
+        }
+        .location {
+            @extend .contacts;
+            margin: 43px 0 0 43px;
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: -22px;
+                content: "";
+                display: block;
+                width: 7px;
+                height: 11px;
+                background: url(img/location.png) center center no-repeat;
+            }
+        }
+        .phone {
+            @extend .contacts;
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: -23px;
+                content: "";
+                display: block;
+                width: 11px;
+                height: 11px;
+                background: url(img/phone.png) center center no-repeat;
+            }
+        }
+        .email {
+            @extend .contacts;
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: -25px;
+                content: "";
+                display: block;
+                width: 13px;
+                height: 8px;
+                background: url(img/mail.png) center center no-repeat;
+            }
+        }
+    }
+}
+.made-by {
+    text-align: center;
+    background: #222222;
+    line-height: 43px;
+    color: #3c3c3c;
+    font-family: $lato;
+    font-size: 12px;
+}

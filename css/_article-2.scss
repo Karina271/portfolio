@@ -1,0 +1,53 @@
+.article-2 {
+    background: #2eb398;
+    padding: 13px 0;
+    .article-2-wrapper {
+        max-width: 822px;
+        border-right: 1px solid #219d84;
+        border-left: 1px solid #219d84;
+        margin: 0 auto;
+        padding: 55px 0 120px;
+        @media (max-width: 600px) {
+            padding: 40px 0;
+        }
+        @media (max-width: 380px) {
+            padding: 20px 0;
+        }
+    }
+    .karina-gulka-image {
+        float: left;
+        margin: 0 20px;
+        @media (max-width: 380px) {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .h1 {
+        font-family: $maven;
+        font-size: 30px;
+        color: rgb( 215, 252, 245 );
+        @media (max-width: 380px) {
+            text-align: center;
+            margin: 20px 0 0;
+        }
+    }
+    .h3 {
+        font-family: $maven;
+        font-size: 18px;
+        color: rgb( 32, 129, 109 );
+        margin: 5px 0 0;
+        @media (max-width: 380px) {
+            text-align: center;
+        }
+    }
+    .p {
+        font-family: $lato;
+        font-size: 12px;
+        color: rgb( 215, 252, 245 );
+        line-height: 1.8;
+        margin: 24px 0 0;
+        padding: 0 20px 0;
+        text-align: justify;
+    }
+}

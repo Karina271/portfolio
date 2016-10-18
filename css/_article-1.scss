@@ -1,0 +1,101 @@
+    .article-1 {
+    padding: 90px 0 0;
+    @media (max-width: 1020px) {
+        position: relative;
+        width: 460px;
+        height: 1688px;
+        margin: 0 auto;
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .hexal-row-1 {
+        width: 822px;
+        padding: 0 11px;
+        margin: 0 auto;
+        position: relative;
+        @media (max-width: 1020px) {
+            position: absolute;
+            width: 222px;
+            top: 236px;
+            left: 5px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .hexal-row-2 {
+        width: 1022px;
+        padding: 0 11px;
+        margin: 0 auto;
+        position: relative;
+        top: -35px;
+        @media (max-width: 1020px) {
+            position: absolute;
+            width: 222px;
+            top: 65px;
+            left: 116px
+        }
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .hexal-row-3 {
+        width: 822px;
+        padding: 0 11px;
+        margin: 0 auto;
+        position: relative;
+        top: -70px;
+        @media (max-width: 1020px) {
+            position: absolute;
+            width: 222px;
+            top: 236px;
+            right: 10px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .hexal {
+        display: block;
+        width: 180px;
+        height: 206px;
+        float: left;
+        margin: 0 10px;
+        -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        &:last-child {
+            @media (max-width: 1020px) {
+                margin-bottom: 20px;
+            }
+        }
+        @media (max-width: 1020px) {
+            float: none;
+            margin-bottom: 137px;
+        }
+    }
+    .before, .after {
+        height: 104px;
+        width: 1px;
+        background: #e4e9eb;
+        position: absolute;
+        top: 51px;
+        @media (max-width: 1020px) {
+            display: none;
+        }
+    }
+    .before {
+        left: 0;
+    }
+    .after {
+        right: 0;
+    }
+}

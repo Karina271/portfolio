@@ -1,0 +1,44 @@
+.nav {
+    background: #323232;
+    .nav-ul {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .separator {
+        width: 2px;
+        height: 2px;
+        background: #474c5f;
+    }
+    .nav-li-a {
+        font-family: $lato;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        line-height: 63px;
+        height: 100%;
+        font-size: 40px;
+        &:hover {
+            color: #2eb398;
+        }
+    }
+    .logo-a {
+        position: relative;
+        width: 90px;
+        height: 63px;
+        background: url(img/main-logo.png) center 11px no-repeat;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -28px;
+            left: 0;
+            width: 90px;
+            height: 26px;
+            background: url(img/Pointy-Thingy.png) center center no-repeat;
+        }
+    }
+}
