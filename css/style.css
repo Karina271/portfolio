@@ -169,15 +169,18 @@ table {
     width: 90px;
     height: 63px;
     background: url(img/main-logo.png) center 11px no-repeat; }
-    .nav .logo-a:after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: -28px;
-      left: 0;
-      width: 90px;
-      height: 26px;
-      background: url(img/Pointy-Thingy.png) center center no-repeat; }
+    .nav .logo-a:after { 
+    content: ''; 
+    display: block; 
+    position: absolute; 
+    bottom: -28px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border: 0 solid transparent; 
+    border-width: 26px 45px 0 45px; 
+    border-top-color: #323232; 
+    }
 
 /********ARTICLE-1********/
 .article-1 {
@@ -326,6 +329,50 @@ table {
     padding: 0 20px 0;
     text-align: justify; }
 
+.soc {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  background: #a4dbd4;
+  white-space: nowrap;
+}
+
+.soc li {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.soc a[class^="icon-"] svg {
+  width: 40px;
+  height: 40px;
+  fill: #00ab94;
+}
+
+.soc li:hover svg {
+  fill: white;
+  background: #6ccbbe;
+}
+
+.soc a[class^="icon-"]:active svg {
+  fill: #2eb9a6;
+  background: white;
+}
+
+.soc li:first-child {
+  padding-left: 0;
+}
+
+.soc li:last-child {
+  padding-right: 0;
+}
+
+.soc {
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+
 /********ARTICLE-3********/
 .article-3 {
   background: #323232;
@@ -450,7 +497,6 @@ table {
     width: 90px; 
     background: #2eb398; 
     color: #d7fcf5; 
-    font-family:; 
     font-weight: bold; 
     border: none; 
     float: right; 
