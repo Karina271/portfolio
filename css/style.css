@@ -164,23 +164,43 @@ table {
     font-size: 18px; }
     .nav .nav-li-a:hover {
       color: #2eb398; }
+.logo-a {
+      display: block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+      padding: 1px 0;
+      background:  #323232;
+}
   .nav .logo-a {
     position: relative;
-    width: 90px;
     height: 63px;
-    background: url(img/main-logo.png) center 11px no-repeat; }
+    background: #323232;  }
     .nav .logo-a:after { 
     content: ''; 
     display: block; 
-    position: absolute; 
-    bottom: -28px; 
-    left: 0; 
+    position: absolute;     
+    bottom: -45px; 
+    left: -12px; 
     width: 0; 
     height: 0; 
     border: 0 solid transparent; 
     border-width: 26px 45px 0 45px; 
     border-top-color: #323232; 
     }
+ svg {
+    margin-top: 20px;
+    width: 64px;
+    stroke: #ececec;
+    fill: transparent;
+    cursor: pointer;
+  }
+ svg:hover {
+    stroke: #37B298;
+  }
+ svg:active {
+    stroke: #EB5D68;
+  }
 
 /********ARTICLE-1********/
 .article-1 {
@@ -289,7 +309,8 @@ table {
         padding: 20px 0; } }
   .article-2 .karina-gulka-image {
     float: left;
-    margin: 0 20px; }
+    margin: 0 40px 0 20px;
+}
     @media (max-width: 380px) {
       .article-2 .karina-gulka-image {
         float: none;
@@ -297,10 +318,9 @@ table {
         margin: 0 auto; } }
     .karina-gulka-image {
         display: block; 
-        width: 250px; 
-        height: 257px; 
+        width: 200px;
         float: left; 
-        margin: 0 10px; 
+        margin: 0 10px;
         -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
     }
@@ -329,6 +349,11 @@ table {
     padding: 0 20px 0;
     text-align: justify; }
 
+.soc-container {
+    margin-right: 20px;
+    margin-top: 24px;
+    text-align: right;
+}
 .soc {
   display: inline-block;
   padding: 0;
@@ -367,10 +392,6 @@ table {
   padding-right: 0;
 }
 
-.soc {
-    margin-right: 60px;
-    margin-bottom: 10px;
-}
 
 
 /********ARTICLE-3********/
