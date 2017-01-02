@@ -164,7 +164,7 @@ table {
     font-size: 18px; }
     .nav .nav-li-a:hover {
       color: #2eb398; }
-.logo-a {
+  .logo-a { 
       display: block;
       position: relative;
       width: 64px;
@@ -180,7 +180,7 @@ table {
     content: ''; 
     display: block; 
     position: absolute;     
-    bottom: -45px; 
+    bottom: -49px; 
     left: -12px; 
     width: 0; 
     height: 0; 
@@ -188,17 +188,17 @@ table {
     border-width: 26px 45px 0 45px; 
     border-top-color: #323232; 
     }
-  logo-a svg {
+  .nav svg {
     margin-top: 20px;
     width: 64px;
     stroke: #ececec;
     fill: transparent;
     cursor: pointer;
   }
- svg:hover {
+.nav svg:hover {
     stroke: #37B298;
   }
- svg:active {
+.nav svg:active {
     stroke: #EB5D68;
   }
 
